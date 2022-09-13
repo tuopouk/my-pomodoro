@@ -14,6 +14,7 @@ app = Dash(__name__,
            external_stylesheets=[dbc.themes.VAPOR],
            prevent_initial_callbacks=True)
 server = app.server
+app.title = 'My Pomodoro'
 
 countdown_store = dcc.Store(id = 'countdown-store')
 running_countdown_store = dcc.Store(id = 'running-countdown-store')
